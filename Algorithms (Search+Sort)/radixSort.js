@@ -37,3 +37,13 @@ function radixSort(arr){
    }
    return arr;
 }
+
+
+// this is a log n algorithm which is based on an unconventional method of
+// sorting based on the  digits of a number, starting from 1's place, 10's place
+// 100's place etc. There are helper methods to get us the individual digit from
+// a number, to get the total number of digits in  a number and finally another
+// method to return the highest # of digits  of a number in the array
+// all this information is used to sort the numbers. 10 Buckets are created
+// corresponding to the digits (0-9) and at every iteration they are sorted
+// starting from 1's place upto the highest number.

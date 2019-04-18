@@ -38,3 +38,12 @@ function merge(left,right) {
   }
   return result;
 }
+
+
+ // the passed array is recursively split around its midpoint until there are
+ // single element arrays
+ // the initial split happens recursively till the left array is split into
+ // single element array, similarly for the right side of the inital split
+ //
+ // the important aspect here is to merge these single element arrays. They are
+ // compared with each other, and merged back up. All of this happens in-place.

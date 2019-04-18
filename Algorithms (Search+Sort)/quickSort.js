@@ -30,3 +30,13 @@
    swap(arr, start, swapIdx);
    return swapIdx;
  }
+
+
+ // The passeed array is split recursively around a pivotIndex. the  pivot method
+ // is cruicial to the working of this important.
+ // the pivot method takes in the array, a left and a right index to work on. It
+ // works on the array , assumes the pivot is always the first index and finds the
+ // elements smaller to it.
+ // a count is kept of the numbner of elements smaller and the pivot is then swapped
+ // to that index.  this index is then returned and recursive calls are made on the
+ // left and right of the pivot.
