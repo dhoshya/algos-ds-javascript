@@ -64,6 +64,25 @@ class BST{
       }
     return false;
   }
+
+  BFS() {
+    let data = [];
+    let queue = [];
+    let node = this.root;
+    queue.push(node);
+    //evaluates to a truthy value
+    while (queue.length) {
+      // take from the beginning of the queue
+      node = queue.shift();
+
+      // add the node to the visited data array
+      data.push(node.value);
+      // check for children, if yed, add to the queue
+      if(node.left) queue.push(node.left);
+      if(node.right) queue.push(node.right);
+    }
+    return data;
+  }
 }
 
 var bst = new BST();
