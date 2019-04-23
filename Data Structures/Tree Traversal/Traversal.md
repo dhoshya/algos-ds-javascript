@@ -20,6 +20,8 @@ Starting with the root, Traverse the entire left side down the depth of the tree
 Once exhausted, go up the child to the parent, check for right. Keep doing this
 till you reach the root. Once the root is reached, again traverse the left side
 and the same work around.
+Ex: Useful if you want to store the tree / flatten the tree and reconstruct it
+later
 
 PostOrder:
 In this traversal, all of the children nodes are traversed first and the root is
@@ -33,3 +35,4 @@ In this traversal, we start with the root, visit the entire left side, then
 visit the root and then visit the entire right side.
 We go down the depth, add the last left leaf like PostOrder, then add it's parent
 and then add its right child
+Ex: Nodes are in ascending order.
