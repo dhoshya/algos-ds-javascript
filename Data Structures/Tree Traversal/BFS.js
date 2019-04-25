@@ -77,7 +77,7 @@ class BST{
 
       // add the node to the visited data array
       data.push(node.value);
-      // check for children, if yed, add to the queue
+      // check for children, if yes, add to the queue
       if(node.left) queue.push(node.left);
       if(node.right) queue.push(node.right);
     }
